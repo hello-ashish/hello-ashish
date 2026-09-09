@@ -1,0 +1,73 @@
+<svg width="800" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+
+    <style>
+      .text-title { font: 800 24px 'Inter', -apple-system, sans-serif; fill: #e6edf3; }
+      .text-subtitle { font: 500 14px 'Inter', -apple-system, sans-serif; fill: #8b949e; letter-spacing: 1px; }
+      .text-label { font: 600 12px 'Inter', -apple-system, sans-serif; fill: #8b949e; text-transform: uppercase; letter-spacing: 1.5px; }
+      .text-value { font: 600 22px 'Inter', -apple-system, sans-serif; fill: #e6edf3; }
+      .text-desc { font: 400 14px 'Inter', -apple-system, sans-serif; fill: #c9d1d9; }
+      .accent { fill: #14b8a6; }
+      
+      .box { fill: #21262d; rx: 6; }
+      .line { stroke: #30363d; stroke-width: 1; }
+      
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .cursor { fill: #14b8a6; animation: blink 1s step-end infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="320" rx="12" fill="url(#bg-grad)" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="40" y="50" class="text-subtitle">System Overview / <tspan class="accent">ashish_gupta</tspan></text>
+  <text x="40" y="85" class="text-title">ASHISH GUPTA <tspan class="cursor">_</tspan></text>
+  
+  <rect x="40" y="105" width="40" height="4" rx="2" fill="url(#accent-grad)" />
+
+  <!-- Main Grid Left -->
+  <text x="40" y="145" class="text-label">BUILDING</text>
+  <text x="40" y="165" class="text-desc">AroundUs</text>
+
+  <text x="40" y="210" class="text-label">CORE DOMAINS</text>
+  <text x="40" y="230" class="text-desc">Web · AI · Real-time · Security</text>
+
+  <text x="40" y="275" class="text-label">PRIMARY STACK</text>
+  <text x="40" y="295" class="text-desc">TypeScript · Python · Java · C++ · React</text>
+
+  <!-- Divider line -->
+  <line x1="400" y1="130" x2="400" y2="295" class="line" />
+
+  <!-- Main Grid Right -->
+  <!-- Box 1 -->
+  <rect x="440" y="130" width="150" height="75" class="box" />
+  <text x="460" y="160" class="text-label">REPOSITORIES</text>
+  <text x="460" y="190" class="text-value">23</text>
+
+  <!-- Box 2 -->
+  <rect x="610" y="130" width="150" height="75" class="box" />
+  <text x="630" y="160" class="text-label">FOLLOWERS</text>
+  <text x="630" y="190" class="text-value">1</text>
+
+  <!-- Status Bar -->
+  <rect x="440" y="225" width="320" height="70" class="box" />
+  <text x="460" y="255" class="text-label">SYSTEM STATUS</text>
+  <circle cx="465" cy="275" r="4" fill="#238636" />
+  <text x="480" y="280" class="text-desc">Online. Building the next product.</text>
+
+</svg>

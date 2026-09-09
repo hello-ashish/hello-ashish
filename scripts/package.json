@@ -1,0 +1,13 @@
+{
+  "name": "github-dashboard-generator",
+  "version": "1.0.0",
+  "description": "Generates a custom SVG dashboard for GitHub Profile README",
+  "main": "generate-dashboard.js",
+  "type": "module",
+  "scripts": {
+    "generate": "node generate-dashboard.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
